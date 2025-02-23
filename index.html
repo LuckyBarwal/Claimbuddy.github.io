@@ -1,0 +1,187 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ClaimBuddy - Your Trusted Claims Partner</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="logo">
+          <!-- Inline SVG Logo for ClaimBuddy: A shield with a check mark and a blue gradient -->
+          <svg width="50" height="50" viewBox="0 0 100 100" class="logo-icon">
+            <defs>
+              <radialGradient id="shieldGradient" cx="50%" cy="50%" r="50%">
+                <stop offset="0%" stop-color="#1e88e5" />
+                <stop offset="100%" stop-color="#42a5f5" />
+              </radialGradient>
+            </defs>
+            <path
+              d="M50,10 L80,30 L80,60 L50,90 L20,60 L20,30 Z"
+              fill="url(#shieldGradient)"
+            />
+            <polyline
+              points="35,55 45,70 65,40"
+              stroke="#fff"
+              stroke-width="8"
+              fill="none"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+          <span class="logo-text">ClaimBuddy</span>
+        </div>
+        <button class="menu-toggle" aria-label="Toggle Menu">
+          <span class="menu-icon">&#9776;</span>
+        </button>
+        <ul class="nav-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#testimonials">Testimonials</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <!-- Hero Section -->
+      <section id="home" class="hero">
+        <div class="hero-content">
+          <h1>Welcome to ClaimBuddy</h1>
+          <p>
+            Your trusted partner in claims management. Fast, reliable, and friendly service to help you every step of the way.
+          </p>
+          <a href="#services" class="cta-btn">Get Started</a>
+        </div>
+        <div class="hero-svg">
+          <!-- SVG element with a gentle ripple animation using a white circle -->
+          <svg width="300" height="300" viewBox="0 0 100 100">
+            <circle
+              cx="50"
+              cy="50"
+              r="45"
+              stroke="#fff"
+              stroke-width="2"
+              fill="none"
+              class="ripple-circle"
+            />
+          </svg>
+        </div>
+      </section>
+
+      <!-- About Section -->
+      <section id="about" class="about">
+        <h2>About ClaimBuddy</h2>
+        <p>
+          At ClaimBuddy, we believe that filing claims should be simple and stress-free.
+          Our modern platform streamlines the claims process, ensuring you receive swift and efficient assistance every time.
+        </p>
+        <div class="skills">
+          <div class="skill">
+            <h3>Efficiency</h3>
+            <p>Streamlined process for quick claim submissions.</p>
+          </div>
+          <div class="skill">
+            <h3>Reliability</h3>
+            <p>Your trusted partner through every claim.</p>
+          </div>
+          <div class="skill">
+            <h3>Support</h3>
+            <p>Expert advice and 24/7 assistance.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Services Section -->
+      <section id="services" class="services">
+        <h2>Our Services</h2>
+        <div class="project-grid">
+          <div class="project-card">
+            <h3>Quick Claims Processing</h3>
+            <p>
+              We expedite the claims process to ensure you get the support you need without delay.
+            </p>
+            <!-- Inline SVG icon for service -->
+            <svg width="30" height="30" viewBox="0 0 24 24" class="icon">
+              <path
+                d="M12 2L2 12h3v8h6v-6h2v6h6v-8h3z"
+                fill="#0056b3"
+              />
+            </svg>
+          </div>
+          <div class="project-card">
+            <h3>Expert Assistance</h3>
+            <p>
+              Our professionals guide you through every step, ensuring clarity and support.
+            </p>
+            <!-- Inline SVG icon for service -->
+            <svg width="30" height="30" viewBox="0 0 24 24" class="icon">
+              <circle cx="12" cy="12" r="10" fill="#0056b3" />
+            </svg>
+          </div>
+          <div class="project-card">
+            <h3>Digital Documentation</h3>
+            <p>
+              Easily upload and manage all necessary documents online in a secure environment.
+            </p>
+            <!-- Inline SVG icon for service -->
+            <svg width="30" height="30" viewBox="0 0 24 24" class="icon">
+              <rect x="4" y="4" width="16" height="16" fill="#0056b3" />
+            </svg>
+          </div>
+        </div>
+      </section>
+
+      <!-- Testimonials Section -->
+      <section id="testimonials" class="testimonials">
+        <h2>What Our Clients Say</h2>
+        <div class="reviews-grid">
+          <div class="review-card">
+            <p>
+              "ClaimBuddy made the claims process incredibly seamless and stress-free. Highly recommended!" - Jamie
+            </p>
+            <div class="review-rating">★★★★★</div>
+          </div>
+          <div class="review-card">
+            <p>
+              "Their support team is outstanding. They guided me step-by-step with genuine care." - Taylor
+            </p>
+            <div class="review-rating">★★★★★</div>
+          </div>
+          <div class="review-card">
+            <p>
+              "I felt fully supported during my claim process. ClaimBuddy is truly a lifesaver!" - Jordan
+            </p>
+            <div class="review-rating">★★★★☆</div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact Section -->
+      <section id="contact" class="contact">
+        <h2>Get in Touch</h2>
+        <p>
+          If you have any questions or need further assistance, please don’t hesitate to contact us.
+        </p>
+        <form class="contact-form">
+          <input type="text" name="name" placeholder="Your Name" required />
+          <input type="email" name="email" placeholder="Your Email" required />
+          <textarea name="message" placeholder="Message" rows="4" required></textarea>
+          <button type="submit">Send Message</button>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2023 ClaimBuddy. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js" defer></script>
+  </body>
+</html>
